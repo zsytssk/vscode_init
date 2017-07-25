@@ -1,0 +1,66 @@
+{
+    "name": "zsytssk-vscode-init",
+    "displayName": "zsytssk vscode init",
+    "description": "zsytssk code init script",
+    "version": "0.0.1",
+    "publisher": "zsytssk",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.zsyInit.insertText",
+        "onCommand:extension.zsyInit.insertText(*,bol)",
+        "onCommand:extension.zsyInit.insertText(1.,bol)",
+        "onCommand:extension.zsyInit.insertText(>,bol)",
+        "onCommand:extension.zsyInit.insertText(>>,bol)",
+        "onCommand:extension.zsyInit.insertText(;,eol)",
+        "onCommand:extension.zsyInit.insertText",
+        "onCommand:extension.sayHello.test"
+    ],
+    "contributes": {
+        "commands": [{
+                "command": "extension.sayHello.test",
+                "title": "sayHello test"
+            }, {
+                "command": "extension.zsyInit.insertText(*,bol)",
+                "title": "insertText * in bol"
+            }, {
+                "command": "extension.zsyInit.insertText(1.,bol)",
+                "title": "insertText 1. in bol"
+            }, {
+                "command": "extension.zsyInit.insertText(>,bol)",
+                "title": "insertText > in bol"
+            },
+            {
+                "command": "extension.zsyInit.insertText(>>,bol)",
+                "title": "insertText >> in bol"
+            }, {
+                "command": "extension.zsyInit.insertText(;,eol)",
+                "title": "insertText ; in eol"
+            }
+        ],
+        "menus": {
+            "explorer/context": [{
+                "command": "extension.sayHello.test",
+                "title": "sayHello test"
+            }]
+        }
+    },
+    "main": "./out/src/extension",
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}

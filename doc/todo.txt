@@ -1,0 +1,32 @@
+## css
+* feature
+  > P****xToRem
+  > RemToPx
+  > cssSelect
+
+
+## insertText
+1. symbol
+   ## # :> > >>... 1. *
+2. shortcut
+3. 如果有相同的下一行 如果有不一样的直接换掉
+
+
+## 待做功能
+1. preview html,
+2. 监听页面的事件处理，html5 upload 删除，这两者要交互
+3. 将最后的结果导出
+
+-| zsyCopyFileName
+
+## 保存
+-> alt+;插入分号, 如果已经有分号在下面插入新的一行
+-> 在前面插入也这样, 如果已经前面已经有相同的->就新起一行插入
+-> 如果插入的字符串不相 同, 那么替换当前的插入符
+
+* dsfsdfs
+  > dsfsdfdsf
+  > dsfsdfdsf
+  > dsfsdfdsf
+  > dsfsdfdsf
+  > dsfsdfdsf

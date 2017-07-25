@@ -1,0 +1,22 @@
+## commands
+vscode.commands.executeCommand('workbench.action.toggleActivityBarVisibility');
+vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
+
+## 插入字符
+var edit = editor.edit;
+  var selections = editor.selections;
+
+  editor.edit(function (edit) {
+    for (let i = 0; i < selections.length; i++) {
+      let selection = selections[i];
+      var pos_line_start = new vscode.Position(selection.active.line, 0);
+      let time_str = getCurrentTime();
+      edit.insert(pos_line_start, time_str);
+    }j
+  });
+
+## 注册 previewHtml Schema 的处理函数
+vscode.workspace.registerTextDocumentContentProvider(gitHistorySchema, provider);
+
+## 拼接路径
+<script src="${this.getNodeModulesPath(path.join('jquery', 'dist', 'jquery.min.js'))}"></script>
